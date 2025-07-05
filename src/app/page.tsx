@@ -20,7 +20,7 @@ const TARGET_WORDS = ["RACH", "WILL", "YOU", "BE", "MY", "GIRLFRIEND"];
 
 export default function Strands() {
   return (
-    <div className="flex flex-col items-center mt-24 space-y-4">
+    <div className="flex flex-col items-center sm:mt-24 mt-16 space-y-4">
       <div className="flex flex-col items-center">
         <span className={`text-xs font-bold text-[#BA0001]`}>Beautiful Woman</span>
         <span
