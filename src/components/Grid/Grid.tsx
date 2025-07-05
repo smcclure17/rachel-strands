@@ -239,6 +239,7 @@ export const Grid: React.FC<GridProps> = ({ gridData, targetWords }) => {
     if (selectedCells.length > 1) drawFor(selectedCells, "#8ec5ff");
     foundWords.forEach((fw) => drawFor(fw.cells, "#BA0001"));
 
+    //@ts-ignore
     return lines;
   };
 
