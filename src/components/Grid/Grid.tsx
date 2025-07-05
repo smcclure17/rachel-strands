@@ -199,7 +199,6 @@ export const Grid: React.FC<GridProps> = ({ gridData, targetWords }) => {
   }, [stopDragging]);
 
   const renderLines = () => {
-    //@ts-ignore
     const lines: React.JSX.Element[] = [];
 
     const drawFor = (cells: Cell[], color: string) => {
