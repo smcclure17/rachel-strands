@@ -4,6 +4,7 @@ import { Arvo } from "next/font/google";
 
 const arvo = Arvo({
   weight: "700",
+  subsets: ["latin"],
 });
 
 // Grid designed to contain the words: GIRL, FRIEND, GIRLFRIEND
