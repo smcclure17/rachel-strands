@@ -200,7 +200,7 @@ export const Grid: React.FC<GridProps> = ({ gridData, targetWords }) => {
 
   const renderLines = () => {
     //@ts-ignore
-    const lines = [];
+    const lines: React.JSX.Element[] = [];
 
     const drawFor = (cells: Cell[], color: string) => {
       for (let i = 0; i < cells.length - 1; i++) {
@@ -239,7 +239,6 @@ export const Grid: React.FC<GridProps> = ({ gridData, targetWords }) => {
     if (selectedCells.length > 1) drawFor(selectedCells, "#8ec5ff");
     foundWords.forEach((fw) => drawFor(fw.cells, "#BA0001"));
 
-    //@ts-ignore
     return lines;
   };
 
