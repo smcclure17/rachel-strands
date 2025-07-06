@@ -227,7 +227,7 @@ export const Grid: React.FC<GridProps> = ({ gridData, targetWords }) => {
               x2={x2}
               y2={y2}
               stroke={color}
-              strokeWidth="10"
+              strokeWidth="12"
               strokeLinecap="round"
             />
           );
@@ -291,7 +291,7 @@ export const Grid: React.FC<GridProps> = ({ gridData, targetWords }) => {
                       className={`
                         w-[11vw] h-[11vw] sm:w-10 sm:h-10 flex items-center justify-center
                         font-bold text-[5vw] sm:text-lg
-                        transition-colors touch-none rounded-full
+                        touch-none rounded-full
                         ${getCellStyle()}
                         ${isDragging ? "select-none" : ""}
                         ${isCellPulsing(rowIndex, colIndex) ? "pulse" : ""}
